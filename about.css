@@ -1,0 +1,186 @@
+
+body.aboutus-page h2{
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+/* Banner styles */
+/* About us Image Credit : https://www.freepik.com/ */
+.banner {
+    background: url('images/aboutus.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* About Us section styles */
+.about-us {
+    padding: 50px;
+}
+
+
+/* table css */
+
+.about-us-table {
+    margin-top: 20px;
+    padding: 0 40px 40px 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Featured Services section styles */
+.featured-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 50px 50px 50px;
+}
+
+.service-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.sdetail {
+    padding: 10px 15px;
+}
+
+.team-card img,
+.service-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Founder section styles */
+.founder-section {
+    background-color: #AFC8AD;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.founder-img {
+    width: 20%;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+
+.founder-section div {
+    flex: 1;  
+}
+
+/* Our Team section styles */
+.our-team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 50px 50px 50px;
+}
+
+.team-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.tdetail {
+    padding: 10px 15px;
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Newsletter section styles */
+.newsletter {
+    text-align: center;
+    padding: 50px;
+}
+
+
+input {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+button.sub {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+
+button.sub:hover {
+    background-color: #45a049;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .featured-services {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    .our-team {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+    .featured-services {
+        grid-template-columns: 1fr; 
+    }
+
+    .founder-section {
+        flex-direction: column; 
+    }
+
+    .founder-img {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .our-team {
+        grid-template-columns: 1fr;
+    }
+    table {
+        overflow-x: auto;
+    }
+
+    #wrapper{
+        width: 100%;
+    }
+    body.aboutus-page h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+}

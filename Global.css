@@ -1,0 +1,284 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 45px;
+    line-height: 64px;    
+}
+h2 {
+    font-size: 40px;
+    line-height: 54px;
+    padding-top: 20px;
+}
+h4 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px 10px 0px;
+}
+
+/* Black nav */
+#black_nav_wrapper{
+    position: fixed;
+    width:100%;
+    color:white;
+    top:0;
+    min-height: 25px;
+    padding:8px 140px 6px 140px;
+    font-size:13px;
+    text-align: right;
+    background-color: #88AB8E;
+    z-index: 2;
+}
+#track{
+    float: left;
+}
+#black_nav_wrapper a{
+    color: white;
+    text-decoration: none;
+}
+#location{
+    width:17px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+/* icons */
+
+.icons img{
+    width: 30px;
+    margin-left:5px;
+    cursor: pointer;
+}
+.f_icons{
+    float:left;
+    cursor: pointer;
+}
+/* Logo */
+
+#logo{
+    width:145px;
+    cursor: pointer;
+}
+/* Header */
+.header_wrapper {
+    clear: left;
+    padding:30px 15px 0px 15px;
+    top:0;
+    min-height: 95px;
+    border-bottom:1px solid #eee;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background-color: #F2F1EB;
+    z-index: 1;
+}
+.header_flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.header_flexbox > div {
+    padding: 6px;
+}
+.header_nav {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.header_nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px 8px 10px;
+}
+.header_nav a {
+    text-decoration: none;
+    padding: 7px 8px 7px 8px;
+    border-bottom: 1px solid #F2F1EB;
+    color:steelblue;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header_nav a:hover{
+    color: #88AB8E;
+    border-bottom:1px solid #88AB8E;
+}
+.search {
+    background-color: #f9f9f9;
+    border:1px solid #aaa;
+    color: #111;
+    padding: 6px;
+    height: 40px;
+    width: 300px;
+    border-radius:3px;
+}
+#search_button{
+    padding: 9px;
+    border-radius:3px;
+    border:1px solid #aaa;
+}
+#search_button:hover{
+    cursor:pointer;
+}
+
+/* main */
+
+main{
+    margin-top: 95px;
+    margin-bottom:30px;
+}
+#wrapper{
+    z-index: 1;
+    width:85%;
+    margin: auto;
+}
+
+/* footer */
+
+footer{
+    background-color: #F2F1EB;
+    height:230px;
+    position: relative;
+}
+.footer_nav {
+    width: 100%;
+    text-align: center;
+    padding-top:10px;
+    margin: auto;
+}
+.footer_nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px 8px 10px;
+}
+.footer_nav a {
+    text-decoration: none;
+    padding: 7px 8px 7px 8px;
+    color:steelblue;
+}
+.footer_nav a:hover{
+    color:#88AB8E;
+}
+.footer_container{
+    width:80%;
+    margin:auto;
+    text-align: right;
+}
+#footer_inner{
+    clear:left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #88AB8E;
+    padding: 6px;
+    color:white;
+    text-align:center;
+}
+#footer_line{
+    width:80%;
+    border:1px solid #ccc;
+    margin:auto;
+}
+#f_line{
+    margin:auto;
+    width:40%;
+    text-align: center;
+    font-style: italic;
+}
+#footer_text{
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px) {
+    #black_nav_wrapper{
+        padding:8px 30px 6px 30px;
+    }
+    .header_nav ul{
+        width: 100%;
+    }
+    .header_nav li {
+        list-style: none;
+        display: inline-block;
+        padding: 5px 5px 5px 5px;
+    }
+    #logo{
+    width:145px;
+    padding:0px;
+    margin: 0px;
+    }
+    .logo_box{
+    width: 100%;
+    text-align: center;
+    }
+    .icons{
+        display: none;
+    }
+    .search_box{
+        width:100%;
+        order:2;
+        text-align: center;
+    }
+    .search{
+        width:60%;
+    }
+    .header_flexbox {
+        width: 100%;
+    }
+    .header_wrapper {
+        clear: left;
+        padding:30px 10px 0px 10px;
+        overflow: hidden;
+        width: 100%;
+    }
+    main {
+        margin-top: 190px;
+    }
+    #footer_inner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+    #f_line{
+        width: 100%;
+    }
+    .footer_container {
+        width: 100%;
+        text-align: center;
+    }
+    .footer_nav ul{
+        width: 100%;
+    }
+    .footer_nav li {
+    padding: 8px;
+    }
+    .f_icons{
+        margin: auto;
+        width: 100%;
+    }
+    #mastercard,#visa{
+        display: none;
+    }
+}
